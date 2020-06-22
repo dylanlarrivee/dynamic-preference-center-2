@@ -1,0 +1,163 @@
+SWAP GUID to DIMEMAILID when you get a chance?
+
+GUID: 1337
+DIMEMAILID: 4258907785
+
+DIMEMAILID=4258907785
+
+[%loadValue(requestValue('MAIL'),'MAIL','')%]
+
+Unsubscribe - PROD
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=PbkPp5AkyIzV0WeASani4WwGB1sHelwtDuWfEobWPkcrRnizznYjq_ILDnr47VJcwUqpboHKPW%2BAv%2BUhFs&GUID=1337
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=PbkPjzCyqqwBudgFPfnxoUP%2B5pC0jinfU72QZ3kbCSClDSHzzm5PNkeBEOkx7W36yy7529WW4GtRnzY5DE&DIMEMAILID=4258907785
+
+Fan Roster - PROD
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=w_1wZYBVa_aQwu9ckWlnAXMLLHn5J6muJa0Qh2JJqCyoWzaMMUtUz%2B4SjKrLwxUDTPvE_RKtfckRfjXdEA&GUID=1337
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=w_1wZYBVa_aQwu9ckWlnAXMLLHn5J6muJa0Qh2JJqCyoWzaMMUtUz%2B4SjKrLwxUDTPvE_RKtfckRfjXdEA&DIMEMAILID=4258907785
+
+Unsubscribe - DEV
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=kIPkQ9ptJ1wELUX8XhqpqNB8u7MtLJVzKEhDPTcZAnFjhFLA7LAOZcJNT5gMyA%2BL0%2Bjz%2BN_aEzPeXttpIy&GUID=1337
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=PbkPp16Ntvp6YBpZDjpLzRdFlErUPF0zFv_DMCWviExUUUkzyo_Vn0z0ceqdNYe1GZDRyKOEWNwFuuWQv3&DIMEMAILID=4258907785
+
+Fan Roster - DEV
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=PbkPiYWJmS9rBXhSrS%2Bb62GX9GpCoymKZepVmrzen1FgaNz5zQtjrP4uWTMdIUDAXUWE_9qu5gX1s1yerH&GUID=1337
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=PbkPp6kRXL98G0rP7tgITNmMCJwRo4Ivm8KOrK1t%2BTl9wxkzzP_Eakaqvn8UXQ%2B7ViELbBlz_A5di1%2BGvw&DIMEMAILID=4258907785
+
+
+
+
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/vikings-icon.png')%]
+
+
+[%loadValue(requestValue('FAVORITE_PLAYER.CURRENT_FAVORITE_PLAYER'),'FAVORITE_PLAYER.CURRENT_FAVORITE_PLAYER','')%]
+
+[%loadValue(requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS'),'FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS','')%]
+
+[% requestValue('MASTER.GUID') %]
+
+[% requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS') %]
+[% requestValue('FAVORITE_PLAYER.CURRENT_FAVORITE_PLAYER') %]
+
+
+[% requestValue('FAVORITE_PLAYER.CURRENT_FAVORITE_PLAYER') %]
+[% requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS') %]
+
+
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-large.jpg')%]
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-small.jpg')%]
+
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/facebook-icon.png')%]
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/twitter-icon.png')%]
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/instagram-icon.png')%]
+
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/player-select-x.jpg')%]
+[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/player-select-x-gold.jpg')%]
+
+https://www.facebook.com/minnesotavikings/
+https://twitter.com/Vikings
+https://www.instagram.com/vikings/
+
+[%LINK(Facebook)%]
+[%LINK(Twitter)%]
+[%LINK(Instagram)%]
+
+[%LINK(106)%]
+
+PrivacyPolicy
+ContestRules
+
+https://www.vikings.com/footer/privacy-policy
+http://image.minnesotavikingsemail.com/lib/fe851372736d05747d/m/7/4ada48dc-1ff7-456a-935b-80980e21a3e0.pdf
+
+
+ <!-- SOCIAL ICONS/LINKS/PRIVACY POLICY START -->
+ <sg:content-block name="pref-center-footer"  id="footer"  />
+
+FAV_PLAYER_INFO
+
+1985-06-08
+
+[%itemValue( 'playerData', 1, 'PLAYER_NAME' )%]
+
+console.log("data") 
+console.log("[%itemValue( 'playerData', 0, 'PLAYER_NAME' )%]")     
+
+console.log("data") 
+console.log("[%itemValue( 'playerInfo', 0, 'PLAYER_NAME' )%]")    
+
+
+var counter = 0;
+let playerArray = [];
+function PlayerData (name,number,position,experience,headshot) {
+    this.playerName = name,
+    this.playerNumber = number,
+    this. playerPosition = position,
+    this.playerExperience = experience,
+    this.playerHeadshotURL = headshot 
+}
+
+let rowChecker = "[%itemValue( 'playerInfo', "+0+" , 'PLAYER_NAME' )%]"
+
+let PlayerName = "[%itemValue( 'playerInfo', [VARIABLE.rowCounter], 'PLAYER_NAME' )%]"
+let PlayerNumber = "[%itemValue( 'playerInfo', [VARIABLE.rowCounter], 'PLAYER_NUMBER' )%]"
+let PlayerPosition = "[%itemValue( 'playerInfo', [VARIABLE.rowCounter], 'PLAYER_POSITION' )%]"
+let PlayerExperience = "[%itemValue( 'playerInfo', [VARIABLE.rowCounter], 'PLAYER_EXPERIENCE' )%]"
+let PlayerHeadshotURL = "[%itemValue( 'playerInfo', [VARIABLE.rowCounter], 'PLAYER_HEADSHOT_URL' )%]"
+let playerData = new PlayerData(PlayerName,PlayerNumber,PlayerPosition,PlayerExperience,PlayerHeadshotURL)
+playerArray.push(playerData);
+counter++;
+
+
+
+
+this. players = playerArray;
+console.log("data") 
+console.log(rowChecker)   
+
+
+currentFavPlayer: {
+    chosen: true,
+    PlayerName: "[%proper(itemValue( 'playerInfo', 0, 'PLAYER_NAME' ))%]",
+    PlayerNumber: "[%itemValue( 'playerInfo', 0, 'PLAYER_NUMBER' )%]",
+    PlayerPosition: "[%itemValue( 'playerInfo', 0, 'PLAYER_POSITION' )%]",
+    PlayerExperience: "[%itemValue( 'playerInfo', 0, 'PLAYER_EXPERIENCE' )%]",
+    PlayerHeadshotURL: "[%itemValue( 'playerInfo', 0, 'PLAYER_HEADSHOT_URL' )%]"     
+}
+
+
+// Convert names to title case. This does it in real time.
+                        // this.custInfo.firstName = this.custInfo.firstName.split(' ').map(i => i[0].toUpperCase() + i.substring(1).toLowerCase()).join(' '); 
+                        // this.custInfo.lastName = this.custInfo.lastName.split(' ').map(i => i[0].toUpperCase() + i.substring(1).toLowerCase()).join(' '); 
+
+
+                        [% requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS') %]
+
+
+
+"[%loadValue(requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS'),'FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS','')%]"                        
+
+ADDRESS_INFO.ZIPCODE
+
+SUBSCRIPTIONS.FANROSTER_EVENTS
+SUBSCRIPTIONS.FANROSTER_NEWS
+SUBSCRIPTIONS.FANROSTER_OFFERS_CONTESTS
+SUBSCRIPTIONS.FANROSTER_WOMEN
+SUBSCRIPTIONS.FANROSTER_TICKET_INSIDER
+
+
+"[%loadValue(requestValue('ADDRESS_INFO.ZIPCODE'),'ADDRESS_INFO.ZIPCODE','')%]"   
+
+"[%loadValue(requestValue('SUBSCRIPTIONS.FANROSTER_EVENTS'),'SUBSCRIPTIONS.FANROSTER_EVENTS','')%]" 
+"[%loadValue(requestValue('SUBSCRIPTIONS.FANROSTER_NEWS'),'SUBSCRIPTIONS.FANROSTER_NEWS','')%]" 
+"[%loadValue(requestValue('SUBSCRIPTIONS.FANROSTER_OFFERS_CONTESTS'),'SUBSCRIPTIONS.FANROSTER_OFFERS_CONTESTS','')%]" 
+"[%loadValue(requestValue('SUBSCRIPTIONS.FANROSTER_WOMEN'),'SUBSCRIPTIONS.FANROSTER_WOMEN','')%]" 
+"[%loadValue(requestValue('SUBSCRIPTIONS.FANROSTER_TICKET_INSIDER'),'SUBSCRIPTIONS.FANROSTER_TICKET_INSIDER','')%]" 
+
+"[%loadValue(requestValue('SUBSCRIPTIONS.TICKETALERTS_SEASONTICKETS'),'SUBSCRIPTIONS.TICKETALERTS_SEASONTICKETS','')%]" 
+
+
+Unsubscribe - DEV
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=QcjQntqHrspq77iAqGJyuRJMCCs6C13XD4Z7jPXPFB8dC17AAdUBVOYPc4lqjKgBwX_gBn%2BqqwhOst7n6b&GUID=1337
+
+Fan Roster - DEV
+https://vikings.slgnt.us/optiext/optiextension.dll?ID=7ty7EqvjebcTKOVkCbesScr4co1mWFWCcsAiWLq9oxXSrPUlk%2Beu%2B%2BYP43W5hiaSR0E0b6H2FQzOqU42BI&GUID=1337

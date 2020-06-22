@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- DO NOT EDIT | These meta tags normalize the webpage across browsers + devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Web Browser Tab - Name + Norseman Icon -->
+        <link rel="shortcut icon" href="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/vikings-icon.png')%]" />
+        <title>Vikings Fan Roster</title>
+
+    <!-- CSS  -->
+         <!--Page Style-->
+         <style>
+            
+            html {
+                background-color: #4f2683 !important; 
+                padding-top: 20px !important; 
+            }
+            body {
+                background-color: unset;
+                max-width: 800px !important; 
+                margin: 0px auto !important; 
+                line-height: 1.5 !important; 
+                color: #808080 !important; 
+                font-family: Arial !important; 
+                font-size: 16px !important; 
+                padding: 40px;
+            }
+            .layout {
+                background-color: #FFFFFF !important; 
+                border: 0px; box-sizing: border-box !important; 
+                padding: 0px; width: 100% !important; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3) !important;
+            }
+
+            .columns {
+                padding-bottom: 40px;
+            }
+
+            /* HEADER */
+            .header img, .section img, .footer img {
+                display: block !important;
+                padding: 0px !important;
+                text-align: center !important;
+                height: auto !important;
+                width: 100% !important;
+                border: 0px solid transparent !important;
+            }
+            @media only screen and (max-width: 480px){
+                #desktop-header-img, #big-img, #desktop-footer-img{
+                    visibility: hidden;
+                    height: 0px !important;
+                }
+                #mobile-header-img, #small-img, #mobile-footer-img{
+                    visibility: visible;
+                }
+            }
+
+            @media only screen and (min-width: 481px){
+                #desktop-header-img, #big-img, #desktop-footer-img{
+                    visibility: visible;
+                }
+                #mobile-header-img, #small-img, #mobile-footer-img{
+                    visibility: hidden;
+                    height: 0px !important;
+                }
+            }
+            /* END HEADER */
+
+            /* TEXT */
+                    h1 { 
+                        font-family: Arial !important;
+                        font-size: 28px !important;
+                        color: #4f2683 !important;
+                        line-height: 1.5 !important;
+                        font-weight: bold !important;
+                        font-style: normal !important;
+                        text-align: center;
+                    }
+
+                    h2 { 
+                        font-family: Arial; 
+                        font-size: 22px; 
+                        color: #4f2683; 
+                        line-height: 1.5; 
+                        font-weight: bold; 
+                        font-style: normal; 
+                    }
+
+                    h3 { 
+                        font-family: Arial; 
+                        font-size: 20px; 
+                        color: #4f2683; 
+                        line-height: 1; 
+                        font-weight: bold; 
+                        font-style: normal; 
+                    }             
+
+            /* END TEXT STYLE */
+
+            /* FORM DESCRIPTION */
+                    .form-desc{
+                        padding-top: 40px;
+                        padding-left: 60px;
+                        padding-right: 60px;
+                        padding-bottom: 20px;
+                        margin: auto;
+                    }
+                    .form-desc span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        line-height: 150%;
+                        vertical-align: middle;
+                    }
+            /* END FORM DESCRIPTION */
+
+            /* FORM */
+                form {
+                    background-color:transparent !important;
+                    margin-top:0px !important;
+                    margin-right:0px !important;
+                    margin-bottom:0px !important;
+                    margin-left:0px !important;
+                    padding-right:0px !important;
+                    padding-bottom:0px !important;
+                    padding-left:0px !important;
+                    text-align:left !important;
+                    margin:0px !important;
+                }
+                .sc-formfield-label, .sc-formfield-label label, .dataLabel{
+                    color:#4F2683 !important;
+                    font-family:Arial, Helveica, sans-serif !important;
+                    font-size:16px !important;
+                    font-weight:bold !important;
+                    line-height:inherit !important;
+                    margin-bottom:3px !important;
+                    vertical-align:middle !important;
+                    cursor: default;
+                }
+
+                .sublabel {
+                    margin:0px;
+                    color:#808080;
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    vertical-align: text-top;
+                }
+                .sc-formfield-input label{
+                    color: black !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    font-size: 16px !important;
+                    line-height: inherit !important;
+                    margin-bottom: 3px !important;
+                    vertical-align: middle !important;
+                }
+                :focus { 
+                    outline: -webkit-focus-ring-color auto 5px;
+                    outline-color: #4F2683;
+                    outline-style: auto;
+                    outline-width: 5px;
+                }
+                .smartcapture-controls , td.stylingblock-content-wrapper{
+                    display: inline-block !important;
+                    padding-bottom: 15px !important;
+                    width: 100% !important;
+                }
+                table.stylingblock-content-wrapper {
+                    padding-bottom: 20px;
+                }
+                .stylingblock-content-wrapper .camarker-inner{
+                    padding: unset !important;
+                }
+                .inner-form-text{
+                    padding: 20px 60px 0px 60px !important;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+                table#date-table {
+                    margin-left: -2px !important;
+                }
+
+            /* BUTTONS */
+                    a[href]:not(.buttonstyles) a[href]:not(#privacy){ 
+                        color: #4F2683; 
+                        text-decoration: none; 
+                    }
+                    button.buttonblock { 
+                        color: #FFFFFF; 
+                        border-radius: 0px; 
+                        background-color: #5D5D5D; 
+                    }
+                    td.buttonblock { 
+                        color: #FFFFFF; 
+                        border-radius: 0px; 
+                        background-color: #5D5D5D; 
+                    }
+                    a.buttonstyles { 
+                        font-family: Arial; 
+                        font-size: 16px; 
+                        color: #FFFFFF; 
+                        padding: 20px 10px 10px; 
+                    }
+                    .smartcapture-submit-button-wrapper {
+                        padding-bottom: 10px !important;
+                        text-align: center !important;
+                        padding-top: 10px !important;
+                    }
+
+                    .sc-button {
+                        background-color:#4F2683 !important;
+                        border-color:#4F2683 !important;
+                        border-radius:3px !important;
+                        border-style:solid !important;
+                        -webkit-border-radius:3px !important;
+                        -moz-border-radius:3px !important;
+                        color:#FFFFFF !important;
+                        font-family:Arial, Helvetica, sans-serif !important;
+                        font-size:16px !important;
+                        line-height:normal !important;
+                        padding:5px !important;
+                        margin-top: 20px !important;
+                    }
+
+                    .sc-button:hover {
+                        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9) !important;
+                    }
+            /* END BUTTON STYLE */
+
+
+            /* FOOTER */
+                    .social-links {
+                        width: 145px;
+                        margin: 10px auto auto auto;
+                    }
+                    .privacy-policy {
+                        width: 100%;
+                        margin-top:10px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                    }
+                    a#privacy, a#rules {
+                        color: black;
+                        font-size: 11px;
+                    }
+
+                    a#privacy:hover, a#ruels:hover {
+                        color: white;
+                    }
+            /* END FOOTER */
+
+            /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+            @media only screen and (max-width:700px){
+
+                .buttonstyles{
+                    font-family: Arial !important; 
+                    font-size: 16px !important; 
+                    color: #FFFFFF !important; 
+                    padding: 10px !important; 
+                }
+                h1{
+                    font-family: Arial !important; 
+                    font-size: 28px !important; 
+                    color: #4f2683 !important; 
+                    line-height: 1.5 !important; 
+                    text-align: left !important;
+                    margin-top: unset !important;
+                }
+                h2{
+                    font-family: Arial !important; 
+                    font-size: 20px !important; 
+                    color: #4f2683 !important; 
+                    line-height: 1.5 !important; 
+                    text-align: left !important;
+                }
+                h3{
+                    font-family: Arial !important; 
+                    font-size: 18px !important; 
+                    color: #4f2683 !important;
+                    line-height: 1.5 !important; 
+                    text-align:left !important;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .sc-formfield-label, .sc-formfield-label label, .dataLabel{
+                    font-size: 18px !important;
+                }
+                .form-desc {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+                form {
+                    padding-right: 0px !important;
+                    padding-left: 0px !important;
+                }
+                input, select, .sc-formfield-input label{
+                    font-size: 18px !important;
+                }
+                input[type="text"], input[type="email"], select, #date-table{
+                    width: -webkit-fill-available;
+                }
+
+                select {
+                    width: 32%;
+                    display: inline-block;
+                }
+                
+                .sc-button{
+                    width: -webkit-fill-available;
+                    font-size: 20px !important;
+                    margin-top: unset !important;
+                    padding: 15px !important;
+                }
+
+
+                a:not(.buttonstyles){line-height: 1.5 !important; }
+                
+                .mobile-hidden{display: none !important; }
+                
+                .responsive-td {
+                    width: 100% !important; 
+                    display: block !important; 
+                    padding: 0 !important;
+                }
+            }
+            @media only screen and (max-width:480px){
+                html{
+                    padding-top: 0px !important;
+                }
+                body, .tb_properties{
+                    font-family: Arial !important; 
+                    font-size: 16px !important; 
+                    color: #808080 !important; 
+                    line-height: 1.5 !important; 
+                    padding: 0px !important; 
+                }
+                h1{
+                    font-size: 22px !important; 
+                }
+            }
+            /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+
+            [v-cloak] { display: none; }
+
+            /* Favorite player module specific */
+
+            #summaryPgH1 {
+                text-align: left;
+                font-size: 28px !important;
+            }
+
+            .form-summary-line {
+                padding-bottom: 12px;
+            }
+            .form-summary-part {
+                float: left;
+                width: 100%;
+            }
+            .badge {
+                max-width: 75px;
+                min-width: 65px;
+            }
+            #badges {
+                width: 100%;
+                margin-top: 12px;
+            }
+
+            .summaryPlayerTable {
+                width: 100% !important;
+            }
+
+            /*Current favorite player mobile swap*/
+            #selectedFavoritePlayerCard-desktop {display: block;}
+            #selectedFavoritePlayerCard-mobile {display: none;}
+            
+            @media only screen and (max-width:700px){
+            #selectedFavoritePlayerCard-desktop {display: none;}
+            #selectedFavoritePlayerCard-mobile {display: block;}    
+            }  
+
+            @media only screen and (min-width:700px){
+                .form-summary-part {
+                    float: left;
+                    width: 100%;
+                }
+
+                .summaryPlayerTable {
+                    width: 50% !important;
+                }
+
+            }
+        </style>
+        <!-- Favorite Player Menu + Card Styles -->
+        <style>
+             
+/* Scrollbar style */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0px;
+        }
+    
+        /* Track */
+        ::-webkit-scrollbar-track {
+        /* box-shadow: inset 0 0 0px grey;  */
+        border-radius: 0px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: grey; 
+        border-radius: 0px;
+        }
+    
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #4F2683; 
+        }
+    
+    /* End scrollbar style */
+    
+    
+    /* Player Selection Scrollable */
+        .sortable tbody {
+            display:block;
+            overflow:auto;
+            height:395px;
+            width:100%;
+        }
+    
+        .sortable thead tr {
+            display:block;
+            border-spacing: 0px;
+            padding: 3px 0;
+        }
+    /* End Scrollable */
+    
+    
+    /* Text styles */
+        h5#player-selection-container-title {
+            margin: unset;
+            color: white !important;
+            height: 20px;
+            font-size: 15px;
+        }
+    
+        .playerSelectTableHeaderRow{
+            background-color: #4F2683;
+            color: white;
+            font-size: 14px;
+            cursor: default;
+        }
+    
+        .playerSelectTableBody {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .playerSelectTableHeaderRow td:not(:first-child):hover {
+            color: #FEC524;
+        }
+    
+        h2.playerNumber, h2.playerPosition {
+            font-size: 42px !important;
+            font-stretch: condensed !important;
+            padding-top: 2px !important;
+        }
+    
+        h2.playerNumber, h2.playerPosition, h2.playerName, h3.playerExp, h3.playerPos2 {
+            margin: unset !important;
+        }
+    
+        h2.playerNumber {
+            color: black !important;
+        }
+    
+        h2.playerName {
+            font-size: 16px !important;
+            color: #4f2683 !important;
+            vertical-align: bottom !important;
+        }
+    
+        h3.playerExp, h3.playerPos2 {
+            font-size: 14px !important;
+            color: #6c6c6c !important;
+            font-weight: bold !important;
+            font-stretch: condensed !important;
+        }
+    
+        h2.playerPosition {
+            color: #6c6c6c !important;
+        }
+    
+        /* Form Elements */
+        #Zimmer {
+            background: #4F2683;
+        }
+    
+        #selectedFavoritePlayerTable {
+            background: #e6e3e3;
+            border-spacing: unset;
+            min-width: 50%;
+            border-color: lightgrey;
+            margin-top: 10px;
+            border:none;
+        }
+    
+        table {
+            cursor: default;
+        }
+    
+        #favoritePlayerHeadshotsTd {
+            width: 50px;
+            padding: 0 5px 0 0;
+        }
+    
+        .favoritePlayerHeadshots {
+            height: 70px;
+            width: 50px;
+        }
+    
+        #CardPosition{
+            width:35px;
+            padding-right:5px;
+        }
+    
+        .openFavoritePlayerPopUpBtn {
+            background-color: white !important;
+            border-color: #d3d1d1 !important;
+            border-width: 1px !important;
+            border-radius: 3px !important;
+            border-style: solid !important;
+            -webkit-border-radius: 3px !important;
+            -moz-border-radius: 3px !important;
+            color: black !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-size: 16px !important;
+            line-height: normal !important;
+            padding: 5px !important;
+            cursor: default;
+        }
+    
+        .openFavoritePlayerPopUpBtn:focus {
+            outline-color: rgb(215, 215, 215) !important;
+        }
+    
+        .openFavoritePlayerPopUpBtn:hover {
+            box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9) !important;
+        }
+    
+        #selectChangePlayerBtn{
+            margin-top: 10px;
+        }
+    
+        /* Pop-up Style */
+    
+        .active {
+            background-color:#FEC524 !important;
+        }
+    
+    
+        .playerHeadshots {
+        height: 70px;
+        width: 50px;
+        }
+    
+        #player-selection-container {
+            width: 100%;
+            height: 100%;
+    
+            position: fixed;
+            display:none;
+            float: left;
+            left:0;
+            top:0;
+    
+            background-color: rgba(22,22,22,0.5);
+    
+            z-index: 1 !important;
+        }
+    
+    
+        #player-selection-subcontainer {
+            background:#141414; 
+            margin: 0 auto;
+            position:relative; 
+            z-index:41;
+            top: 15%;
+            -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+            -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+            box-shadow:0 0 10px rgba(0,0,0,0.4);
+            
+            height: fit-content;    
+            width: fit-content;
+    
+            padding: 0 10px;
+        }
+    
+        #player-selection {
+            position:relative; 
+            
+            height: 447px;
+            width: 100%;
+    
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+    
+        #player-selection-container-title {
+            float: left;
+            padding: 10px 0 5px 0 !important;
+        }
+    
+        #player-selection-container-exit-btn {
+            max-height: 15px;
+            max-width: 15px;
+            float: right;
+            padding-right: 10px !important;
+            padding-top: 12px !important;
+        }
+    
+        .playerSelectTable {
+            padding: 0px;
+            width: 100%;
+            border-spacing: 0px 7px;
+        }
+    
+        .playerSelectTablePlayerRow {
+            height: 50px;
+            background: #e6e3e3;
+        }
+    
+        .playerSelectTablePlayerRow:hover {
+            background-color: rgb(215, 215, 215);
+        }
+    
+        #tableCorner {
+            width: 55px;
+        }
+    
+        .playerSelectTableHeadshot {
+            width: 50px;
+            padding:0px;
+        }
+    
+        .playerSelectTableNumber {
+            width: 40px;
+            text-align: center;
+            padding: 0 5px;
+        }
+    
+        .playerSelectTablePosition {
+            width: 60px;
+            text-align: center;
+            padding: 0 5px;
+        }
+    
+        .playerSelectTableName {
+            width: fit-content;
+        }
+    
+        .playerHeadshots, .favoritePlayerHeadshots {
+            background: #767678;
+            background-repeat: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+    
+    @media only screen and (max-width:815px){
+        #selectedFavoritePlayerTable {
+            width: 100%;
+        }
+    
+        #selectChangePlayerBtn{
+            margin-top: 25px;
+        }
+    
+        .openFavoritePlayerPopUpBtn{
+            padding: 10px;
+        }
+        @media only screen and (orientation: landscape){
+            #player-selection-container {
+                width: 100%;
+            }
+            #player-selection-subcontainer {
+                top: 10px;
+                width: 75%;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 450px){
+        #CardPosition{
+            display: none;
+        }
+        h2.playerNumber, h2.playerPosition {
+            transform: scale(1, 1.25);
+            -webkit-transform: scale(1, 1.25); /* Safari and Chrome */
+            -moz-transform: scale(1, 1.25); /* Firefox */
+            -ms-transform: scale(1, 1.25); /* IE 9+ */
+            -o-transform: scale(1, 1.25); /* Opera */
+            text-align: center !important;
+        }
+    
+        #player-selection-subcontainer{
+            height: 100%;
+            width: 100%;
+            top:unset;
+            padding: unset;
+    
+        }
+    
+        #player-selection-container-title{
+            padding: 10px 0 5px 10px !important;
+        }
+    
+        #tableCorner {
+            width: 60px;
+        }
+    
+        #popUpTBody{
+            padding: 0 10px;
+            margin-top: -5px;
+        }
+    
+        #player-selection-container-exit-btn{
+            padding-right: 10px !important;
+        }
+        .playerSelectTable{
+            height: 100%
+        }
+    
+        .sortable tbody{
+            height: inherit;
+        }
+    }
+    
+    @media only  screen and (max-width: 345px){
+        #fan-roster-form, #fan-roster-form-desc, #fan-roster-summary {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        h2.playerName {
+            font-size: 16px !important;
+        }
+    }       
+        </style>
+    
+     <!-- Vue js Prod CDN
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+            
+    </head>
+    <body>
+        <div class="layout layout-canvas-g" id="app" v-cloak>
+            <div class="section">
+                <div class="columns col1">
+                <!--Banner / Top Image-->
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tr id="big-tr">
+                            <td align="center">
+                                <img id="big-img" class="img-header" src="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-large.jpg')%]">
+                                <img id="small-img" class="img-header" src="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-small.jpg')%]">
+                            </td>
+                        </tr>
+                    </table> 
+            <form id="unsubscribe-landing" action="[%LINK(100)%]" method="post">
+   
+                    <!-- Unsubscribe Message - Display if user has unsubscribed-->
+                    <div v-if="custInfo.unsubscribe" id="unsub-div" style="line-height: 150%; width:75%; margin-left:auto; margin-right:auto;" >
+
+                        <h1 style="margin-top: unset; padding-top: 40px;">You&nbsp;are&nbsp;now&nbsp;unfortunately unsubscribed.</h1>
+                        <!-- If we have a first name to display -->
+                        <span v-if="custInfo.firstName" style="font-family:arial,helvetica,sans-serif;">{{custInfo.firstName}}, we're sad to see you go! If you start to miss us, know that you can always come back to the Vikings Fan Roster form to resubscribe.</span>
+                        <!-- If we dont have a first name to display -->
+                        <span v-else style="font-family:arial,helvetica,sans-serif;">We're sad to see you go! If you start to miss us, know that you can always come back to the Vikings Fan Roster form to resubscribe.</span>
+                            <br>
+                            <br>
+                        <!-- If season ticket holder display this message -->    
+                        <span v-if="custInfo.seasonTickets" style="font-family:arial,helvetica,sans-serif;">As a valued Vikings Season Ticket Member please note that you will continue to recieve all transactional communication via email.</span>
+                        <br>
+                        <br>
+                        <div class="form-summary-part">
+                            <div class="form-summary-line">
+                                <span class="dataLabel">Unsubscribed: </span>
+                                <span>{{custInfo.emailAddress}}</span>
+                            </div>
+                        </div>
+                    </div>
+                <!--Submittion Summary - Display if user has not unsubscribed -->
+                    <div v-else class="form-desc" id="fan-roster-summary" style="line-height: 150%;" >
+
+                        <h1 v-if="custInfo.fullName" id="summaryPgH1">{{ custInfo.fullName }}</h1>
+                        <h2 v-else style="margin-top: unset;">Anonymous Viking!</h2>
+
+                        <div class="form-summary-part">
+                            <div class="form-summary-line">
+                                <span class="dataLabel">Email:</span>
+                                <span> {{custInfo.emailAddress}}</span>
+                            </div>
+                            <div class="form-summary-line">
+                                <span class="dataLabel">Zip Code:</span>
+                                <span v-if="custInfo.zipCode"> {{custInfo.zipCode}}</span>
+                                <span v-else > The world is my zip code.</span>
+                            </div>
+                            <div class="form-summary-line">
+                                <span class="dataLabel">Birthday:</span>
+                                <span v-if="custInfo.birthdayString"> {{custInfo.birthdayString}}</span>
+                                <span v-else > Ageless</span>
+                            </div>
+                            <div class="form-summary-line" >
+                                <span class="dataLabel">Favorite Player:</span>
+                                <!-- Desktop Module - Switch with CSS -->
+                                <div v-if="(custInfo.currentFavPlayer.chosen)" >
+                                <div id="selectedFavoritePlayerCard-desktop">
+                                    <table id="selectedFavoritePlayerTable" class="summaryPlayerTable" frame="box">
+                                        <tbody>
+                                            <tr id="selectedFavoritePlayerCard">
+                                                <td id="favoritePlayerHeadshotsTd">
+                                                    <div class="favoritePlayerHeadshots" id="favoritePlayerImg" v-bind:style="{ 'background-image': 'url(' + custInfo.currentFavPlayer.PlayerHeadshotURL + ')' }"></div>
+                                                </td>
+                                                <td style="width:35px; padding-right:5px;">
+                                                    <h2 class="playerNumber">{{ custInfo.currentFavPlayer.PlayerNumber}}</h2>
+                                                </td>
+                                                <td style="padding-right:5px;">
+                                                    <h2 class="playerName">{{ custInfo.currentFavPlayer.PlayerName}}</h2>
+                                                    <h3 v-if="custInfo.currentFavPlayer.PlayerExperience == 'R'" class="playerExp" id="playerExperience">Rookie</h3>
+                                                    <h3 v-else class="playerExp" id="playerExperience">{{ custInfo.currentFavPlayer.PlayerExperience}} Years</h3>
+                                                </td>
+                                                <td id="playerPositionTD" style="width:35px; padding-right:5px;">
+                                                    <h2 class="playerPosition">{{ custInfo.currentFavPlayer.PlayerPosition}}</h2>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                <!-- Mobile Module - Switch with CSS -->
+                                <div id="selectedFavoritePlayerCard-mobile">
+                                    <table id="selectedFavoritePlayerTable" class="summaryPlayerTable" frame="box">
+                                        <tbody>
+                                             <tr id="selectedFavoritePlayerCard">
+                                                <td id="favoritePlayerHeadshotsTd">
+                                                    <div class="favoritePlayerHeadshots" id="favoritePlayerImg" v-bind:style="{ 'background-image': 'url(' + custInfo.currentFavPlayer.PlayerHeadshotURL + ')' }"></div>
+                                                </td>
+                                                <td style="width:35px; padding-right:5px;">
+                                                    <h2 class="playerNumber">{{ custInfo.currentFavPlayer.PlayerNumber}}</h2>
+                                                </td>
+                                                <td style="padding-right:5px;">
+                                                    <h2 class="playerName">{{ custInfo.currentFavPlayer.PlayerName}}</h2>
+                                                    <h3 class="playerExp" id="playerExperience">{{ custInfo.currentFavPlayer.PlayerPosition}}</h3>
+                                                </td>
+                                                <td id="playerPositionTD" style="width:35px; padding-right:5px;">
+                                                    <h2 class="playerPosition"></h2>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                            </div>   
+                                <span v-else > No Favorite</span>
+                            </div>
+                        <!-- </div>
+                        <div class="form-summary-part"> -->
+                            <div class="form-summary-line">
+                                <span class="dataLabel">Topics you've selected:</span>
+                                <!-- If no topics have been selected -->
+                                <span v-if="!custInfo.topics.events && !custInfo.topics.news && !custInfo.topics.offersContests && !custInfo.topics.women && !custInfo.topics.ticketInsider"> None selected.</span>
+                                <!-- Display logo for each topic they have selected-->
+                                <table v-else id="badges" style="display: inline-block;">
+                                    <tbody style="display: inline-block;">
+                                        <tr style="display: flex; flex-wrap: wrap;">
+                                            <td v-if="custInfo.topics.events" style="display: block; flex: 1;">
+                                                <a href="https://www.vikings.com/schedule/vikings-events/">
+                                                    <sg:image id="image-events" class="badge"/>
+                                                    </a>
+                                            </td>
+                                            
+                                            <td v-if="custInfo.topics.news" style="display: block; flex: 1;">
+                                                <a href="https://www.vikings.com/news/">
+                                                   <sg:image id="image-news" class="badge"/>
+                                                </a>
+                                            </td>
+
+                                            <td v-if="custInfo.topics.offersContests" style="display: block; flex: 1;">
+                                                <a href="https://www.vikings.com/fans/all-promotions">
+                                                    <sg:image id="image-offersContests" class="badge"/>
+                                                </a>
+                                            </td>
+
+                                            <td v-if="custInfo.topics.women" style="display: block; flex: 1;">
+                                                <a href="https://www.vikings.com/vikings-women/">
+                                                    <sg:image id="image-women" class="badge" />
+                                                </a>
+                                            </td>
+
+                                            <td v-if="custInfo.topics.ticketInsider" style="display: block; flex: 1;">
+                                                <a href="https://www.vikings.com/tickets/">
+                                                	<sg:image id="image-ticketInsider"  class="badge"/>
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="form-desc" width="100%" cellspacing="0" cellpadding="0" style="padding-top:0px">
+                        <tr>
+                            <td align="center">
+                                <button class="sc-button">Go Back to Form</button>
+                            </td>
+                        </tr>
+                    </table>
+				</form>
+                </div>
+            </div>
+        </div>
+              <!-- SOCIAL ICONS/LINKS/PRIVACY POLICY START -->
+ <sg:content-block name="pref-center-footer"  id="footer"  />
+<!-- JS -->
+<script type="text/javascript">
+    Vue.config.devtools = false
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    errors: [],
+                    changeEmail: false,
+                    custInfo: {
+                        emailAddress: "[%loadValue(requestValue('MAIL'),'MAIL','')%]",
+                        fullName: "",
+                        firstName:"[%proper(loadValue(requestValue('FIRSTNAME'),'FIRSTNAME',''))%]",
+                        lastName:"[%proper(loadValue(requestValue('LASTNAME'),'LASTNAME',''))%]",
+                        zipCode: "[%loadValue(requestValue('ZIPCODE'),'ZIPCODE','')%]",
+                        birthdayString: "",
+                        seasonTickets: "[%loadValue(requestValue('TICKETALERTS_SEASONTICKETS'),'TICKETALERTS_SEASONTICKETS','')%]",
+                        unsubscribe: "",
+                        topics: {
+                            events: "",
+                            news: "",
+                            offersContests: "",
+                            women: "",
+                            ticketInsider: ""
+                        },
+                        currentFavPlayer: {
+                                chosen: false,
+                                PlayerName: "[%itemValue('playerInfo', 0, 'PLAYER_NAME')%]",
+                                PlayerNumber: "[%itemValue('playerInfo', 0, 'PLAYER_NUMBER')%]",
+                                PlayerPosition: "[%itemValue('playerInfo', 0, 'PLAYER_POSITION')%]",
+                                PlayerExperience: "[%itemValue( 'playerInfo', 0, 'PLAYER_EXPERIENCE')%]",
+                                PlayerHeadshotURL: "[%itemValue('playerInfo', 0, 'PLAYER_HEADSHOT_URL')%]"     
+                            },
+                    },
+                    playerData: [],
+                    dobMMArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    dobDDArray: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+                    dobYY: [],
+                },
+                computed: {
+
+                }, 
+                methods:{
+
+                },
+                updated: function() {
+                },
+                mounted: function(){
+                     // Reformat the birthday string before displaying
+                     let bdayString = "[%loadValue(requestValue('BIRTHDATE'),'BIRTHDATE','')%]";
+                    if (bdayString) {
+                       let bdayArr = bdayString.split("-");
+                       let bdayArrNew = [];
+                       bdayArrNew.push(bdayArr[1],bdayArr[2], bdayArr[0]);
+                       this.custInfo.birthdayString =  bdayArrNew.join("/");
+                    }
+                    // Check to see if a guest has a favorite player available and set the chosen variable based on results
+                    let curFavPlayer = "[%itemValue('playerInfo', 0, 'PLAYER_NAME')%]"
+                           if (curFavPlayer == '') {
+                               this.custInfo.currentFavPlayer.chosen = false;
+                           } else {
+                                this.custInfo.currentFavPlayer.chosen = true;
+                           }
+
+                    // set topics variables based on Selligent list values
+                    let eventsVar = "[%loadValue(requestValue('FANROSTER_EVENTS'),'FANROSTER_EVENTS','')%]"
+                    if (eventsVar=="true" || eventsVar==1) {
+                        this.custInfo.topics.events = true;
+                    } else {
+                        this.custInfo.topics.events = false;
+                    }
+
+                    let newsVar = "[%loadValue(requestValue('FANROSTER_NEWS'),'FANROSTER_NEWS','')%]"
+                    if (newsVar=="true" || newsVar==1) {
+                        this.custInfo.topics.news = true;
+                    } else {
+                        this.custInfo.topics.news = false;
+                    }
+
+                    let offersContestsVar = "[%loadValue(requestValue('FANROSTER_OFFERS_CONTESTS'),'FANROSTER_OFFERS_CONTESTS','')%]"
+                    if (offersContestsVar=="true" || offersContestsVar==1) {
+                        this.custInfo.topics.offersContests = true;
+                    } else {
+                        this.custInfo.topics.offersContests = false;
+                    }
+
+                    let womenVar = "[%loadValue(requestValue('FANROSTER_WOMEN'),'FANROSTER_OFFERS_WOMEN','')%]"
+                    if (womenVar=="true" || womenVar==1) {
+                        this.custInfo.topics.women = true;
+                    } else {
+                        this.custInfo.topics.women = false;
+                    }
+
+                    let ticketInsiderVar = "[%loadValue(requestValue('FANROSTER_TICKET_INSIDER'),'FANROSTER_TICKET_INSIDER','')%]"
+                    if (ticketInsiderVar=="true" || ticketInsiderVar==1) {
+                        this.custInfo.topics.ticketInsider = true;
+                    } else {
+                        this.custInfo.topics.ticketInsider = false;
+                    }
+
+                    // set unsubscribe variable based on Selligent list value
+                    let optOut = "[%loadValue(requestValue('OPTOUT'),'OPTOUT','')%]"
+                    if (optOut==1) {
+                        this.custInfo.unsubscribe = true;
+                    } else {
+                        this.custInfo.unsubscribe = false;
+                    }
+
+                    // Set full name variable based on first and last names available                    
+                    if (this.custInfo.firstName !== '' && this.custInfo.lastName !== '') {
+                        this.custInfo.fullName = this.custInfo.firstName + " " + this.custInfo.lastName;
+                    }
+                    else if (this.custInfo.firstName !== '' && this.custInfo.lastName == '') {
+                        this.custInfo.fullName = this.custInfo.firstName
+                    } else {
+                        this.custInfo.fullName = ""
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

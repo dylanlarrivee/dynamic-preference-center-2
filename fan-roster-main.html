@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" href="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/vikings-icon.png')%]" />
+        <title>Vikings Fan Roster</title>
+        <!--Page Style-->
+        <style>
+            
+            html {
+                background-color: #4f2683 !important; 
+                padding-top: 20px !important; 
+            }
+            body {
+                background-color: unset;
+                max-width: 800px !important; 
+                margin: 0px auto !important; 
+                line-height: 1.5 !important; 
+                color: #808080 !important; 
+                font-family: Arial !important; 
+                font-size: 16px !important; 
+                padding: 40px;
+            }
+            .layout {
+                background-color: #FFFFFF !important; 
+                border: 0px; box-sizing: border-box !important; 
+                padding: 0px; width: 100% !important; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3) !important;
+            }
+
+            .columns {
+                padding-bottom: 40px;
+            }
+
+            /* HEADER */
+            .header img, .section img, .footer img {
+                display: block !important;
+                padding: 0px !important;
+                text-align: center !important;
+                height: auto !important;
+                width: 100% !important;
+                border: 0px solid transparent !important;
+            }
+            @media only screen and (max-width: 480px){
+                #desktop-header-img, #big-img, #desktop-footer-img{
+                    visibility: hidden;
+                    height: 0px !important;
+                }
+                #mobile-header-img, #small-img, #mobile-footer-img{
+                    visibility: visible;
+                }
+            }
+
+            @media only screen and (min-width: 481px){
+                #desktop-header-img, #big-img, #desktop-footer-img{
+                    visibility: visible;
+                }
+                #mobile-header-img, #small-img, #mobile-footer-img{
+                    visibility: hidden;
+                    height: 0px !important;
+                }
+            }
+            /* END HEADER */
+
+            /* TEXT */
+                    h1 { 
+                        font-family: Arial !important;
+                        font-size: 28px !important;
+                        color: #4f2683 !important;
+                        line-height: 1.5 !important;
+                        font-weight: bold !important;
+                        font-style: normal !important;
+                        text-align: center;
+                    }
+
+                    h2 { 
+                        font-family: Arial; 
+                        font-size: 22px; 
+                        color: #4f2683; 
+                        line-height: 1.5; 
+                        font-weight: bold; 
+                        font-style: normal; 
+                    }
+
+                    h3 { 
+                        font-family: Arial; 
+                        font-size: 20px; 
+                        color: #4f2683; 
+                        line-height: 1; 
+                        font-weight: bold; 
+                        font-style: normal; 
+                    }             
+
+            /* END TEXT STYLE */
+
+            /* FORM DESCRIPTION */
+                    .form-desc{
+                        padding-top: 40px;
+                        padding-left: 60px;
+                        padding-right: 60px;
+                        padding-bottom: 20px;
+                        margin: auto;
+                    }
+                    .form-desc span {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 18px;
+                        line-height: 150%;
+                        vertical-align: middle;
+                    }
+            /* END FORM DESCRIPTION */
+
+            /* FORM */
+                form {
+                    background-color:transparent !important;
+                    margin-top:0px !important;
+                    margin-right:0px !important;
+                    margin-bottom:0px !important;
+                    margin-left:0px !important;
+                    padding-right:60px !important;
+                    padding-bottom:0px !important;
+                    padding-left:60px !important;
+                    text-align:left !important;
+                    margin:0px !important;
+                }
+                .select {
+                    margin:0 .5em;
+                }
+                .select:first-child {
+                    margin-left:0;
+                }
+                .sc-formfield-label, .sc-formfield-label label, .dataLabel{
+                    color:#4F2683 !important;
+                    font-family:Arial, Helveica, sans-serif !important;
+                    font-size:16px !important;
+                    font-weight:bold !important;
+                    line-height:inherit !important;
+                    margin-bottom:3px !important;
+                    vertical-align:middle !important;
+                    cursor: default;
+                }
+
+                .sublabel {
+                    margin:0px;
+                    color:#808080;
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    vertical-align: text-top;
+                }
+                .sc-formfield-input label{
+                    color: black !important;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    font-size: 16px !important;
+                    line-height: inherit !important;
+                    margin-bottom: 3px !important;
+                    vertical-align: middle !important;
+                }
+                :focus { 
+                    outline: -webkit-focus-ring-color auto 5px;
+                    outline-color: #4F2683;
+                    outline-style: auto;
+                    outline-width: 5px;
+                }
+                .smartcapture-controls , td.stylingblock-content-wrapper{
+                    display: inline-block !important;
+                    padding-bottom: 15px !important;
+                    width: 100% !important;
+                }
+                table.stylingblock-content-wrapper {
+                    padding-bottom: 20px;
+                }
+                .stylingblock-content-wrapper .camarker-inner{
+                    padding: unset !important;
+                }
+                .inner-form-text{
+                    padding: 20px 60px 0px 60px !important;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+                table#date-table {
+                    margin-left: -2px !important;
+                }
+
+            /* BUTTONS */
+                    a[href]:not(.buttonstyles) a[href]:not(#privacy){ 
+                        color: #4F2683; 
+                        text-decoration: none; 
+                    }
+                    button.buttonblock { 
+                        color: #FFFFFF; 
+                        border-radius: 0px; 
+                        background-color: #5D5D5D; 
+                    }
+                    td.buttonblock { 
+                        color: #FFFFFF; 
+                        border-radius: 0px; 
+                        background-color: #5D5D5D; 
+                    }
+                    a.buttonstyles { 
+                        font-family: Arial; 
+                        font-size: 16px; 
+                        color: #FFFFFF; 
+                        padding: 20px 10px 10px; 
+                    }
+                    .smartcapture-submit-button-wrapper {
+                        padding-bottom: 10px !important;
+                        text-align: center !important;
+                        padding-top: 10px !important;
+                    }
+
+                    .sc-button {
+                        background-color:#4F2683 !important;
+                        border-color:#4F2683 !important;
+                        border-radius:3px !important;
+                        border-style:solid !important;
+                        -webkit-border-radius:3px !important;
+                        -moz-border-radius:3px !important;
+                        color:#FFFFFF !important;
+                        font-family:Arial, Helvetica, sans-serif !important;
+                        font-size:16px !important;
+                        line-height:normal !important;
+                        padding:5px !important;
+                        margin-top: 20px !important;
+                    }
+
+                    .sc-button:hover {
+                        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9) !important;
+                    }
+            /* END BUTTON STYLE */
+
+
+            /* FOOTER */
+                    .social-links {
+                        width: 145px;
+                        margin: 10px auto auto auto;
+                    }
+                    .privacy-policy {
+                        width: 100%;
+                        margin-top:10px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                    }
+                    a#privacy, a#rules {
+                        color: black;
+                        font-size: 11px;
+                    }
+
+                    a#privacy:hover, a#ruels:hover {
+                        color: white;
+                    }
+            /* END FOOTER */
+
+            /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+            @media only screen and (max-width:700px){
+
+                .buttonstyles{
+                    font-family: Arial !important; 
+                    font-size: 16px !important; 
+                    color: #FFFFFF !important; 
+                    padding: 10px !important; 
+                }
+                h1{
+                    font-family: Arial !important; 
+                    font-size: 28px !important; 
+                    color: #4f2683 !important; 
+                    line-height: 1.5 !important; 
+                    text-align: left !important;
+                    margin-top: unset !important;
+                }
+                h2{
+                    font-family: Arial !important; 
+                    font-size: 20px !important; 
+                    color: #4f2683 !important; 
+                    line-height: 1.5 !important; 
+                    text-align: left !important;
+                }
+                h3{
+                    font-family: Arial !important; 
+                    font-size: 18px !important; 
+                    color: #4f2683 !important;
+                    line-height: 1.5 !important; 
+                    text-align:left !important;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .sc-formfield-label, .sc-formfield-label label, .dataLabel{
+                    font-size: 18px !important;
+                }
+                .form-desc {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+                form {
+                    padding-right: 40px !important;
+                    padding-left: 40px !important;
+                }
+                input, select, .sc-formfield-input label{
+                    font-size: 18px !important;
+                }
+                input[type="text"], input[type="email"], select, #date-table{
+                    width: -webkit-fill-available;
+                }
+
+                select {
+                    width: 26%;
+                    display: inline-block;
+                }
+                .select:last-child {
+                    margin-right:0!important;
+                    width:30%!important;
+                }
+                
+                .sc-button{
+                    width: -webkit-fill-available;
+                    font-size: 20px !important;
+                    margin-top: unset !important;
+                    padding: 15px !important;
+                }
+
+
+                a:not(.buttonstyles){line-height: 1.5 !important; }
+                
+                .mobile-hidden{display: none !important; }
+                
+                .responsive-td {
+                    width: 100% !important; 
+                    display: block !important; 
+                    padding: 0 !important;
+                }
+            }
+            @media only screen and (max-width:480px){
+                html{
+                    padding-top: 0px !important;
+                }
+                body, .tb_properties{
+                    font-family: Arial !important; 
+                    font-size: 16px !important; 
+                    color: #808080 !important; 
+                    line-height: 1.5 !important; 
+                    padding: 0px !important; 
+                }
+                h1{
+                    font-size: 22px !important; 
+                }
+            }
+            /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+
+            [v-cloak] { display: none; }
+
+            /* Fan Roster Landing page specific */
+
+            #summaryPgH1 {
+                text-align: left;
+                font-size: 28px !important;
+            }
+
+            .form-summary-line {
+                padding-bottom: 12px;
+            }
+            .form-summary-part {
+                float: left;
+                width: 100%;
+            }
+            .badge {
+                max-width: 75px;
+                min-width: 65px;
+            }
+            #badges {
+                width: 100%;
+                margin-top: 12px;
+            }
+
+            .summaryPlayerTable {
+                width: 100% !important;
+            }
+
+            @media only screen and (min-width:700px){
+                .form-summary-part {
+                    float: left;
+                    width: 100%;
+                }
+
+                .summaryPlayerTable {
+                    width: 50% !important;
+                }
+
+            }
+        </style>
+        <!-- Favorite Player Menu + Card Styles -->
+        <style>
+             
+/* Scrollbar style */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0px;
+        }
+    
+        /* Track */
+        ::-webkit-scrollbar-track {
+        /* box-shadow: inset 0 0 0px grey;  */
+        border-radius: 0px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: grey; 
+        border-radius: 0px;
+        }
+    
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #4F2683; 
+        }
+    
+    /* End scrollbar style */
+    
+    
+    /* Player Selection Scrollable */
+        .sortable tbody {
+            display:block;
+            overflow:auto;
+            height:395px;
+            width:100%;
+        }
+    
+        .sortable thead tr {
+            display:block;
+            border-spacing: 0px;
+            padding: 3px 0;
+        }
+    /* End Scrollable */
+    
+    
+    /* Text styles */
+        h5#player-selection-container-title {
+            margin: unset;
+            color: white !important;
+            height: 20px;
+            font-size: 15px;
+        }
+    
+        .playerSelectTableHeaderRow{
+            background-color: #4F2683;
+            color: white;
+            font-size: 14px;
+            cursor: default;
+        }
+    
+        .playerSelectTableBody {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .playerSelectTableHeaderRow td:not(:first-child):hover {
+            color: #FEC524;
+        }
+    
+        h2.playerNumber, h2.playerPosition {
+            font-size: 42px !important;
+            font-stretch: condensed !important;
+            padding-top: 2px !important;
+        }
+    
+        h2.playerNumber, h2.playerPosition, h2.playerName, h3.playerExp, h3.playerPos2 {
+            margin: unset !important;
+        }
+    
+        h2.playerNumber {
+            color: black !important;
+        }
+    
+        h2.playerName {
+            font-size: 16px !important;
+            color: #4f2683 !important;
+            vertical-align: bottom !important;
+        }
+    
+        h3.playerExp, h3.playerPos2 {
+            font-size: 14px !important;
+            color: #6c6c6c !important;
+            font-weight: bold !important;
+            font-stretch: condensed !important;
+        }
+    
+        h2.playerPosition {
+            color: #6c6c6c !important;
+        }
+    
+        /* Form Elements */
+        #Zimmer {
+            background: #4F2683;
+        }
+    
+        #selectedFavoritePlayerTable {
+            background: #e6e3e3;
+            border-spacing: unset;
+            min-width: 50%;
+            border-color: lightgrey;
+            margin-top: 10px;
+            border:none;
+        }
+    
+        table {
+            cursor: default;
+        }
+    
+        #favoritePlayerHeadshotsTd {
+            width: 50px;
+            padding: 0 5px 0 0;
+        }
+    
+        .favoritePlayerHeadshots {
+            height: 70px;
+            width: 50px;
+        }
+    
+        #CardPosition{
+            width:35px;
+            padding-right:5px;
+        }
+    
+        .openFavoritePlayerPopUpBtn {
+            background-color: white !important;
+            border-color: #d3d1d1 !important;
+            border-width: 1px !important;
+            border-radius: 3px !important;
+            border-style: solid !important;
+            -webkit-border-radius: 3px !important;
+            -moz-border-radius: 3px !important;
+            color: black !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-size: 16px !important;
+            line-height: normal !important;
+            padding: 5px !important;
+            cursor: default;
+        }
+    
+        .openFavoritePlayerPopUpBtn:focus {
+            outline-color: rgb(215, 215, 215) !important;
+        }
+    
+        .openFavoritePlayerPopUpBtn:hover {
+            box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9) !important;
+        }
+    
+        #selectChangePlayerBtn{
+            margin-top: 10px;
+        }
+    
+        /* Pop-up Style */
+    
+        .active {
+            background-color:#FEC524 !important;
+        }
+    
+    
+        .playerHeadshots {
+        height: 70px;
+        width: 50px;
+        }
+    
+        #player-selection-container {
+            width: 100%;
+            height: 100%;
+    
+            position: fixed;
+            display:none;
+            float: left;
+            left:0;
+            top:0;
+    
+            background-color: rgba(22,22,22,0.5);
+    
+            z-index: 1 !important;
+        }
+    
+    
+        #player-selection-subcontainer {
+            background:#141414; 
+            margin: 0 auto;
+            position:relative; 
+            z-index:41;
+            top: 15%;
+            -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+            -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+            box-shadow:0 0 10px rgba(0,0,0,0.4);
+            
+            
+            width: -moz-max-content;    /* Firefox/Gecko */
+            width: fit-content;  /* Chrome */
+            height: -moz-max-content;    /* Firefox/Gecko */
+            height: fit-content;  /* Chrome */
+           
+            padding: 0 10px 5px;
+        }
+    
+        #player-selection {
+            position:relative; 
+            
+            /*height: 447px;*/
+            height: 100%;
+            width: 100%;
+    
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        #popUpTBody {
+            scrollbar-width: none;
+        }
+    
+        #player-selection-container-title {
+            float: left;
+            padding: 10px 0 5px 0 !important;
+        }
+    
+        #player-selection-container-exit-btn {
+            max-height: 15px;
+            max-width: 15px;
+            float: right;
+            padding-right: 10px !important;
+            padding-top: 12px !important;
+        }
+    
+        .playerSelectTable {
+            padding: 0px;
+            width: 100%;
+            border-spacing: 0px 7px;
+        }
+    
+        .playerSelectTablePlayerRow {
+            height: 50px;
+            background: #e6e3e3;
+            width : inherit;
+        }
+    
+        .playerSelectTablePlayerRow:hover {
+            background-color: rgb(215, 215, 215);
+        }
+    
+        #tableCorner {
+            width: 55px;
+        }
+    
+        .playerSelectTableHeadshot {
+            width: 50px;
+            padding:0px;
+        }
+    
+        .playerSelectTableNumber {
+            width: 40px;
+            text-align: center;
+            padding: 0 5px;
+        }
+    
+        .playerSelectTablePosition {
+            width: 60px;
+            text-align: center;
+            padding: 0 5px;
+        }
+    
+        .playerSelectTableName {
+            width : inherit;
+        }
+    
+        .playerHeadshots, .favoritePlayerHeadshots {
+            background: #767678;
+            background-repeat: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        /*Current favorite player mobile swap*/
+        #favorite-player-selected-card-wrapper-desktop {display: block;}
+        #favorite-player-selected-card-wrapper-mobile {display: none;}
+    
+        @media only screen and (max-width:700px){
+        #favorite-player-selected-card-wrapper-desktop {display: none;}
+        #favorite-player-selected-card-wrapper-mobile {display: block;}    
+        }
+        @media only screen and (max-width:815px){
+        #selectedFavoritePlayerTable {
+            width: 100%;
+        }
+    
+        #selectChangePlayerBtn{
+            margin-top: 25px;
+        }
+    
+        .openFavoritePlayerPopUpBtn{
+            padding: 10px;
+        }
+        @media only screen and (orientation: landscape){
+            #player-selection-container {
+                width: 100%;
+            }
+            #player-selection-subcontainer {
+                top: 10px;
+                width: 75%;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 450px){
+        #CardPosition{
+            display: none;
+        }
+        h2.playerNumber, h2.playerPosition {
+            transform: scale(1, 1.25);
+            -webkit-transform: scale(1, 1.25); /* Safari and Chrome */
+            -moz-transform: scale(1, 1.25); /* Firefox */
+            -ms-transform: scale(1, 1.25); /* IE 9+ */
+            -o-transform: scale(1, 1.25); /* Opera */
+            text-align: center !important;
+        }
+    
+        #player-selection-subcontainer{
+            height: 100%;
+            width: 100%;
+            top:unset;
+            padding: unset;
+    
+        }
+    
+        #player-selection-container-title{
+            padding: 10px 0 5px 10px !important;
+        }
+    
+        #tableCorner {
+            width: 60px;
+        }
+    
+        #popUpTBody{
+            width: inherit;
+            margin-top: -5px;
+        }
+    
+        #player-selection-container-exit-btn{
+            padding-right: 10px !important;
+        }
+        .playerSelectTable{
+            height: 100%;
+            padding: 0px 10px;
+        }
+    
+        .sortable tbody{
+            height: inherit;
+        }
+    }
+    
+    @media only  screen and (max-width: 345px){
+        #fan-roster-form, #fan-roster-form-desc, #fan-roster-summary {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        h2.playerName {
+            font-size: 16px !important;
+        }
+    }       
+    [v-cloak] {display: none}
+        </style>
+
+        <!-- Vue js DEV CDN
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+           
+        -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+            
+    </head>
+    <body>
+    <div id="app" v-cloak>
+        <div class="layout layout-canvas-g">
+            <div class="section">
+                <div class="columns col1">
+                <!--Banner / Top Image-->
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tr id="big-tr">
+                            <td align ="center">
+                                <img id="big-img" class="img-header" src="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-large.jpg')%]">
+                                <img id="small-img" class="img-header" src="[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/pref-banner-small.jpg')%]">
+                            </td>
+                        </tr>
+                    </table>                
+                <!--Form Description-->
+                    <div class="form-desc"  id="form-desc" style="line-height: 150%;">
+                        <span style="font-size:18px;">
+                            <h1 v-if="custInfo.displayName">{{custInfo.displayName}}, welcome back!</h1>
+                            <h1 v-else >Welcome back!</h1>
+                            <span style="font-family:arial,helvetica,sans-serif;">Welcome back to the Vikings Fan Roster! Refine your roster stats below to tailor your experience and get exclusive insights on the topics you choose.</span>
+                        </span>
+                    </div>
+                <!--Form-->  
+                    <div class="stylingblock-content-wrapper camarker-inner">
+                        <form id="fan-roster-main" class="smartcapture-content-wrapper fuelux" action="[%LINK(100)%]" method="Post" @submit="checkForm"> 
+                        <!--Email Address-->
+                            <div class="smartcapture-controls">
+                                <div class="sc-formfield-label">
+                                <label for="EmailAddress">Email Address *</label>
+                                </div>
+                                <div class="sc-formfield-input">
+                                <input type="email" name="EmailAddress" data-field-type="EmailAddress" data-validation="email" required="required" data-validation-message="Please enter an email address." v-model="custInfo.emailAddress" :placeholder="custInfo.emailAddress" :disabled="!changeEmail">
+                                <br>
+                                <div v-if="errors.length">
+                                    <span v-for="error in errors" style="color: red" class="sublabel">{{ error }}</span>
+                                </div>
+                                <input id="emailChangeInput" type="checkbox" name="changeEmailAddress" data-field-type="Text" v-model="changeEmail">
+                                <span class="sublabel">Change my email address</span>
+                                </div>
+                            </div>
+                            <br>
+                        <!--First Name-->
+                            <div class="smartcapture-controls">
+                                <div class="sc-formfield-label">
+                                    <label for="FirstName">First Name</label>
+                                </div>
+                                <div class="sc-formfield-input">
+                                    <input type="text" name="First-Name" data-field-type="Text" v-model="custInfo.firstName" :placeholder="custInfo.firstName" pattern="^[a-zA-Z0-9 -]*$" title="We can only accept alphanumeric characters">
+                                </div>
+                            </div>
+                            <br>
+                        <!--Last Name-->
+                            <div class="smartcapture-controls">
+                                <div class="sc-formfield-label">
+                                    <label for="LastName">Last Name</label>
+                                </div>
+                                <div class="sc-formfield-input">
+                                    <input type="text" name="Last-Name" data-field-type="Text"  v-model="custInfo.lastName" :placeholder="custInfo.lastName" pattern="^[a-zA-Z0-9 -]*$" title="We can only accept alphanumeric characters">
+                                </div>
+                            </div>
+                            <br>
+                         <!--Zip Code-->
+                         <div class="smartcapture-controls">
+                            <div class="sc-formfield-label">
+                                <label for="ZipCode">Zip Code</label>
+                            </div>
+                            <div class="sc-formfield-input">
+                                <input type="text" name="Zip-Code" data-field-type="Text" :placeholder="custInfo.zipCode" v-model="custInfo.zipCode" pattern="^[0-9 -]*$" title="We can only accept numeric characters">
+                            </div>
+                        </div>
+                        <br>    
+                        <!-- Birthday -->
+                        <div class="smartcapture-controls">
+                            <div class="sc-formfield-label">
+                                <label for="Birthday">Birthday</label>
+                                <br>
+                                <span class="sublabel">Must be age 14+</span>
+                            </div>
+                            <div class="sc-formfield-input date-dropdown-select-boxes" data-pattern="month day year">
+                                <table id="date-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                    <select class="select month" id="bMonth" name="birthdayMonth" v-model="custInfo.dobMM" :onclick="maxDay()">
+                                        <option value="" disabled selected>MM</option>
+                                            <template v-for="mm in dobMM">
+                                                <option>{{mm}}</option>
+                                            </template>
+                                    </select>
+                                    <select class="select day" name="birthdayDay" id="bDay" v-model="custInfo.dobDD">
+                                        <option value="" disabled selected>DD</option>
+                                            <template v-for="dd in dobDD">
+                                                <option>{{dd}}</option>
+                                            </template>
+                                    </select>
+                                    <select class="select year" id="bYear" name="birthdayYear" v-model="custInfo.dobYY" :onclick="maxDay()">
+                                        <option value="" disabled selected>YYYY</option>
+                                            <template v-for="yy in dobYY">
+                                                <option>{{yy}}</option>
+                                            </template>                                   
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>                              
+            <br>
+                <!-- Favorite Player (Previously Selected) -->
+                <div class="sc-formfield-label">
+                <label for="favorite-player"><strong>Favorite Player</strong></label>
+                </div>
+
+                <input name="favorite-player" type="text" value="FavoritePlayerPlaceholder" style="display: none;">
+                
+                <!-- Desktop Module -->
+                <div id="favorite-player-selected-card-wrapper-desktop" v-if="(custInfo.currentFavPlayer.chosen)">
+                    <table id="selectedFavoritePlayerTable" frame="box" style="display:table;">
+                        <tbody>
+                            <tr id="selectedFavoritePlayerCard">
+                                <td id="favoritePlayerHeadshotsTd">
+                                    <div class="favoritePlayerHeadshots" id="favoritePlayerImg" v-bind:style="{ 'background-image': 'url(' + custInfo.currentFavPlayer.PlayerHeadshotURL + ')' }"></div>
+                                </td>
+                                <td style="width:35px; padding-right:5px;">
+                                    <h2 class="playerNumber">{{ custInfo.currentFavPlayer.PlayerNumber}}</h2>
+                                </td>
+                                <td style="padding-right:5px;">
+                                    <h2 class="playerName">{{ custInfo.currentFavPlayer.PlayerName}}</h2>
+                                    <h3 v-if="custInfo.currentFavPlayer.PlayerExperience == 'R'" class="playerExp" style="display: unset;">Rookie</h3>
+                                    <h3 v-else class="playerExp" style="display: unset;">{{ custInfo.currentFavPlayer.PlayerExperience}} Years</h3>
+                                    <h3 class="playerPos2" style="display: none;">{{ custInfo.currentFavPlayer.PlayerPosition}}</h3>
+                                </td>
+                                <td id="CardPosition">
+                                    <h2 class="playerPosition">{{ custInfo.currentFavPlayer.PlayerPosition}}</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Module -->
+                <div id="favorite-player-selected-card-wrapper-mobile" v-if="(custInfo.currentFavPlayer.chosen)">
+                    <table id="selectedFavoritePlayerTable" frame="box" style="display:table;">
+                        <tbody>
+                            <tr id="selectedFavoritePlayerCard">
+                                <td id="favoritePlayerHeadshotsTd">
+                                    <div class="favoritePlayerHeadshots" id="favoritePlayerImg" v-bind:style="{ 'background-image': 'url(' + custInfo.currentFavPlayer.PlayerHeadshotURL + ')' }"></div>
+                                </td>
+                                <td style="width:35px; padding-right:5px;">
+                                    <h2 class="playerNumber">{{ custInfo.currentFavPlayer.PlayerNumber}}</h2>
+                                </td>
+                                <td style="padding-right:5px;">
+                                    <h2 class="playerName">{{ custInfo.currentFavPlayer.PlayerName}}</h2>
+                                    <h3 class="playerPos2" style="display: unset;">{{ custInfo.currentFavPlayer.PlayerPosition}}</h3>
+                                </td>
+                                <td id="CardPosition">
+                                    <h2 class="playerPosition"></h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="selectChangePlayerBtn"> 
+                    <!-- Button text is placed by favorite-player.js -->
+                     <a v-on:click="openChoosePlayer" id="player-selection-container-btn" class="openFavoritePlayerPopUpBtn" >{{playerButtonText}}</a>
+                    <a id="player-menu-btn"></a>        
+                </div>
+                <br>
+
+            <!-- Player Selection Menu playerPopUp -->
+            <div id="player-selection-container" :style="playerPopUp ? 'display: -webkit-box;' : 'display: none;'">
+                    <div  class="sc-formfield-input" id="player-selection-subcontainer">
+                        <div id="player-selection-header">
+                            <h5 id="player-selection-container-title" style="padding: 0 10px;">Select Your Favorite Player</h5>
+                            <div @mouseover="exitButtonHover = true" @mouseleave="exitButtonHover = false">
+                            <img v-on:click="closeChoosePlayer" id="player-selection-container-exit-btn" 
+                            v-bind:src="(exitButtonHover ? '[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/player-select-x-gold.jpg')%]' : '[%resource('.org/e3e3d6df-24ef-40ea-b603-5533f7c54790/PrefCenterForms/player-select-x.jpg')%]')">
+                        </div>
+                        </div>
+
+                        <div id="player-selection">
+                            <table class="playerSelectTable sortable" id="selectPlayerOptions">
+                                <thead>
+                                    <tr class="playerSelectTableHeaderRow">
+                                        <td class="playerSelectTableHeadshot" style="text-align:right;">Sort by: </td>
+                                        <td class="playerSelectTableNumber" style="text-align:left;">
+                                            <div v-on:click="sortByNumber()" v-html="numberSortedArrowHTML"></div>
+                                        </td>
+                                        <td class="playerSelectTableName" style="width:160px;">
+                                            <div v-on:click="sortByName()"  v-html="nameSortedArrowHTML"></div>
+                                        </td>
+                                        <td v-on:click="sortByPosition()" class="playerSelectTablePosition" style="text-align:left; width:70px;">
+                                            <div v-html="positionSortedArrowHTML"></div>
+                                        </td>
+                                    </tr>
+                                </thead>   
+                                <tbody id="popUpTBody" class="playerSelectTableBody" >
+                                    <tr class="playerSelectTableHeaderRow" style="display:none;">
+                                        <td class="playerSelectTableHeadshot"></td>
+                                        <td class="playerSelectTableNumber"></td>
+                                        <td class="playerSelectTableName"></td>
+                                        <td class="playerSelectTablePosition"></td>
+                                    </tr>
+                            <!-- Player Cards are inserted via playerData array -->
+                            <!-- Loop through player data -->
+                                     <tr v-for="(player, index) in playerData" :key="index" v-bind:class="((player.PLAYER_NAME == custInfo.currentFavPlayer.PlayerName && player.PLAYER_NUMBER == custInfo.currentFavPlayer.PlayerNumber) ? 'playerSelectTablePlayerRow active' : 'playerSelectTablePlayerRow')" id="players" v-show="(player.CURRENT_ROSTER)" v-on:click="updateFavoritePlayer(player.PLAYER_HEADSHOT_URL,player.PLAYER_NUMBER,player.PLAYER_NAME,player.PLAYER_EXPERIENCE,player.PLAYER_POSITION) ; closeChoosePlayer()" >
+                                            <td class="playerSelectTableHeadshot">
+                                                <div class="playerHeadshots" id="playerImg" v-bind:style="{ 'background-image': 'url(' + player.PLAYER_HEADSHOT_URL + ')' }"></div>
+                                            </td>
+                                            <td class="playerSelectTableNumber">
+                                                <h2 class="playerNumber">{{ player.PLAYER_NUMBER }}</h2>
+                                            </td>
+                                            <td class="playerSelectTableName">
+                                                <h2 style="display:none;">{{ player.PLAYER_LAST }}</h2>
+                                                <h2 class="playerName">{{ player.PLAYER_NAME }}</h2>
+                                                <h3 v-if="player.PLAYER_EXPERIENCE == 'R'"  class="playerExp" style="display: unset;">Rookie</h3>
+                                                <h3 v-else class="playerExp" style="display: unset;">{{ player.PLAYER_EXPERIENCE }} Years</h3>
+                                                <h3 class="playerPos2" style="display: none;">{{ player.PLAYER_POSITION }}</h3>
+                                            </td>
+                                            <td class="playerSelectTablePosition">
+                                                <h2 class="playerPosition">{{ player.PLAYER_POSITION }}</h2>
+                                            </td>
+                                        </tr>         
+                                </tbody>
+                                <tfoot></tfoot>   
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                        <!--Email Opt-In Options-->
+                            <div class="smartcapture-controls">
+                                <div class="sc-formfield-label">Choose the topics you want to hear about</div>
+                                <div class="sc-formfield-input-wrapper">
+                                    <div class="sc-formfield-input">
+                                        <label>
+                                            <input type="checkbox" name="OptInEvents" data-field-type="Text" value="TRUE" v-model="custInfo.topics.events">
+                                            &nbsp;Vikings Events
+                                        </label>
+                                    </div>
+
+                                    <div class="sc-formfield-input">
+                                        <label>
+                                        <input type="checkbox" name="OptInNews" data-field-type="Text" value="TRUE" v-model="custInfo.topics.news">
+                                            &nbsp;News
+                                        </label>
+                                    </div>
+
+                                    <div class="sc-formfield-input">
+                                        <label>
+                                        <input type="checkbox" name="OptInOffersContests" data-field-type="Text" value="TRUE" v-model="custInfo.topics.offersContests">
+                                            &nbsp;Exclusive Offers and Contests
+                                        </label>
+                                    </div>
+                                    <div class="sc-formfield-input">
+                                        <label>
+                                        <input type="checkbox" name="OptInWomen" data-field-type="Text" value="TRUE" v-model="custInfo.topics.women">
+                                            &nbsp;Vikings Women
+                                        </label>
+                                    </div>
+                                     <div class="sc-formfield-input">
+                                        <label>
+                                        <input type="checkbox" name="OptInTicketInsider" data-field-type="Text" value="TRUE" v-model="custInfo.topics.ticketInsider">
+                                            &nbsp;Ticket Insider
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            
+                             
+                            
+                        <!--Submit Button-->
+                            <div class="smartcapture-submit-button-wrapper">
+                            <button type="submit" class="sc-button">Update My Stats</button>
+                            </div>
+                         <!--Hidden inputs for Selligent data-->
+                            <input v-if="changeEmail" type="hidden" id="inputText-MAIL" name="MAIL" :value="custInfo.emailAddress">
+                            <input type="hidden" id="inputText-FIRSTNAME" name="FIRSTNAME" :value="custInfo.firstName">
+                            <input type="hidden" id="inputText-LASTNAME" name="LASTNAME" :value="custInfo.lastName">
+                            <input type="hidden" id="inputText-BIRTHDATE" name="BIRTHDATE" :value="custInfo.birthdayString">
+                            <input type="hidden" id="inputText-zipCode" name="ZIPCODE"  :value="custInfo.zipCode" >
+                            <input type="hidden" id="inputText-EVENTS" name="FANROSTER_EVENTS" :value="custInfo.topics.events">
+                            <input type="hidden" id="inputText-NEWS" name="FANROSTER_NEWS" :value="custInfo.topics.news">
+                            <input type="hidden" id="inputText-OFFERS-CONTESTS" name="FANROSTER_OFFERS_CONTESTS" :value="custInfo.topics.offersContests">
+                            <input type="hidden" id="inputText-WOMEN" name="FANROSTER_WOMEN" :value="custInfo.topics.women">
+                            <input type="hidden" id="inputText-TICKET_INSIDER" name="FANROSTER_TICKET_INSIDER" :value="custInfo.topics.ticketInsider">
+                            <input type="hidden" id="inputText-CURRENT_FAVORITE_PLAYER" :value="custInfo.currentFavPlayer.PlayerName"  name="FAVORITE_PLAYER.CURRENT_FAVORITE_PLAYER" >
+                            <input v-if="custInfo.newFavPlayer" type="hidden" id="inputText-PAST_FAVORITE_PLAYERS" name="FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS"   :value="custInfo.pastFavPlayers" >
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- SOCIAL ICONS/LINKS/PRIVACY POLICY START -->
+<sg:content-block name="pref-center-footer"  id="footer"  />
+            
+    <script type="text/javascript">
+        Vue.config.devtools = false
+                var app = new Vue({
+                    el: '#app',
+                    data: {
+                        players:[],
+                        errors: [],
+                        playerButtonText: "",
+                        playerPopUp: false,
+                        numberSortedArrowHTML: 'No.',
+                        nameSortedArrowHTML: 'Name',
+                        positionSortedArrowHTML:'Position',
+                        numberSortedArrowUp: false,
+                        nameSortedArrowUp: false,
+                        positionSortedArrowUp: false,
+                        exitButtonHover: false,
+                        changeEmail: false,
+                        custInfo: {
+                            emailAddress: "[%loadValue(requestValue('MAIL'),'MAIL','')%]",
+                            firstName:"[%proper(loadValue(requestValue('FIRSTNAME'),'FIRSTNAME',''))%]",
+                            lastName:"[%loadValue(requestValue('LASTNAME'),'LASTNAME','')%]",
+                            displayName: "[%proper(loadValue(requestValue('FIRSTNAME'),'FIRSTNAME',''))%]",
+                            zipCode: "[%loadValue(requestValue('ZIPCODE'),'ZIPCODE','')%]",
+                            birthdayString: "[%loadValue(requestValue('BIRTHDATE'),'BIRTHDATE','')%]",
+                            dobMM: "",
+                            dobMMNum: "",
+                            dobDD: "",
+                            dobYY: "",
+                            topics: {
+                                events: "",
+                                news: "",
+                                offersContests: "",
+                                women: "",
+                                ticketInsider: ""
+                            },
+                            currentFavPlayer: {
+                                chosen: true,
+                                PlayerName: "[%itemValue('playerInfo', 0, 'PLAYER_NAME')%]",
+                                PlayerNumber: "[%itemValue('playerInfo', 0, 'PLAYER_NUMBER')%]",
+                                PlayerPosition: "[%itemValue('playerInfo', 0, 'PLAYER_POSITION')%]",
+                                PlayerExperience: "[%itemValue( 'playerInfo', 0, 'PLAYER_EXPERIENCE')%]",
+                                PlayerHeadshotURL: "[%itemValue('playerInfo', 0, 'PLAYER_HEADSHOT_URL')%]"     
+                            },
+                            pastFavPlayers:"[%loadValue(requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS'),'FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS','')%]",
+                            newFavPlayer: false
+                        },
+                        playerData: [],
+                        dobMMArray: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        dobDDArray: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+                        dobYY: [],
+                    },
+                    computed: {
+
+                    }, 
+                    methods:{
+                            // Update Selligent with the new favorite player when selected.
+                            concatFavPlayers:function(){
+                                let pastFavPlayersString = "[%loadValue(requestValue('FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS'),'FAVORITE_PLAYER.PAST_FAVORITE_PLAYERS','')%]";
+                                if (pastFavPlayersString) {
+                                    let pastFavPlayerArray = pastFavPlayersString.split("|");
+                                    let lastFavPlayer = pastFavPlayerArray[pastFavPlayerArray.length-1];
+                                    if (this.custInfo.currentFavPlayer.PlayerName !== lastFavPlayer){
+                                        pastFavPlayerArray.push(this.custInfo.currentFavPlayer.PlayerName);
+                                        this.custInfo.pastFavPlayers = pastFavPlayerArray.join("|");
+                                        this.custInfo.newFavPlayer = true;
+                                    }
+                                } else {
+                                    let pastFavPlayerArray = [];
+                                    let lastFavPlayer = pastFavPlayerArray[pastFavPlayerArray.length-1];
+                                    if (this.custInfo.currentFavPlayer.PlayerName !== lastFavPlayer){
+                                        pastFavPlayerArray.push(this.custInfo.currentFavPlayer.PlayerName);
+                                        this.custInfo.pastFavPlayers = pastFavPlayerArray.join("|");
+                                        this.custInfo.newFavPlayer = true;
+                                    }
+                                }
+
+                                
+                            },
+                            // Open up the choose player box
+                            openChoosePlayer:function(){
+                                this.playerPopUp = true;
+                            },
+                            // Close the choose player box
+                            closeChoosePlayer:function(){
+                                this.playerPopUp = false;
+                            },
+                            // Update the current favorite player when selected
+                            updateFavoritePlayer:function(headshotUrl,number,name,exp,position){
+                                this.custInfo.currentFavPlayer.PlayerHeadshotURL = headshotUrl;
+                                this.custInfo.currentFavPlayer.PlayerNumber = number;
+                                this.custInfo.currentFavPlayer.PlayerName = name;
+                                this.custInfo.currentFavPlayer.PlayerExperience = exp;
+                                this.custInfo.currentFavPlayer.PlayerPosition = position;
+                                this.custInfo.currentFavPlayer.chosen = true;
+                            },
+                            // Sort players by number
+                            sortByNumber:function(){
+                                this.numberSortedArrowUp = !this.numberSortedArrowUp;
+                                this.nameSortedArrowHTML = 'Name';
+                                this.positionSortedArrowHTML = 'Position';
+                                
+                                if (this.numberSortedArrowUp) {
+                                this.playerData.sort(function(a,b){return b.PLAYER_NUMBER - a.PLAYER_NUMBER});
+                                this.numberSortedArrowHTML= 'No. <font face="webdings">5</font>';       
+                                } else {
+                                this.playerData.sort(function(a,b){return a.PLAYER_NUMBER - b.PLAYER_NUMBER});
+                                this.numberSortedArrowHTML= 'No. <font face="webdings">6</font>';      
+                                }
+                                
+                            },
+                            // Sort players by name
+                            sortByName:function(){
+                                this.nameSortedArrowUp = !this.nameSortedArrowUp;
+                                this.numberSortedArrowHTML = 'No.';
+                                this.positionSortedArrowHTML = 'Position';
+                                
+                                if (this.nameSortedArrowUp) {
+                                    this.playerData.sort((a, b) => (b.PLAYER_NAME > a.PLAYER_NAME) ? 1 : -1);
+                                this.nameSortedArrowHTML= 'Name <font face="webdings">5</font>';        
+                                } else {
+                                this.playerData.sort((a, b) => (a.PLAYER_NAME > b.PLAYER_NAME) ? 1 : -1);
+                                this.nameSortedArrowHTML= 'Name <font face="webdings">6</font>';      
+                                }
+                                
+                            },
+                            // Sort players by position
+                            sortByPosition:function(){
+                                this.positionSortedArrowUp = !this.positionSortedArrowUp;
+                                this.nameSortedArrowHTML = 'Name';
+                                this.numberSortedArrowHTML = 'No.';
+                                
+                                if (this.positionSortedArrowUp) {
+                                    this.playerData.sort((a, b) => (b.PLAYER_POSITION > a.PLAYER_POSITION) ? 1 : -1);
+                                this.positionSortedArrowHTML= 'Position <font face="webdings">5</font>';        
+                                } else {
+                                this.playerData.sort((a, b) => (a.PLAYER_POSITION > b.PLAYER_POSITION) ? 1 : -1);
+                                this.positionSortedArrowHTML= 'Position <font face="webdings">6</font>';      
+                                }
+                                
+                            },
+                            // This method changes the month and day drop down options to take into account leap years and the 14+ years of age requirment.   
+                            maxDay: function(){
+                                // Month number if 1 off like an array
+                                var currentDate = new Date();
+                                var now = new Date();
+                                var fourteen_years_ago = new Date(now.getFullYear()-14,now.getMonth(),now.getDate());
+                                var monthNum = fourteen_years_ago.getMonth();
+                                var dayNum = fourteen_years_ago.getDate();
+                                var yearNum = fourteen_years_ago.getFullYear()
+
+                                this.dobDD = this.dobDDArray;
+                                this.dobMM = this.dobMMArray;   
+
+                                if (this.custInfo.dobYY == yearNum) {
+                                    this.dobMM = this.dobMMArray.slice(0,monthNum+1); 
+                                }
+                                if (this.custInfo.dobYY == yearNum && this.custInfo.dobMMNum == monthNum+1) {
+                                    this.dobDD = this.dobDDArray.slice(0,dayNum);              
+                                } else {
+                                    function daysInMonth(month, year) {
+                                        return new Date(year, month, 0).getDate();
+                                    }
+                                    if (this.custInfo.dobMMNum == '') {
+                                        var maxDays = 31
+                                        this.dobDD = this.dobDDArray.slice(0,maxDays);
+                                    } else {
+                                        var maxDays = daysInMonth(this.custInfo.dobMMNum, this.custInfo.dobYY)
+                                        this.dobDD = this.dobDDArray.slice(0,maxDays);
+                                    } 
+                                }
+                            },
+
+                              // This method checks the email address from the form field to make sure it does not have any of the common mis spellings. If it is not it will throw an error and not let the user submit until fixed.        
+
+                              checkForm:function(e) {
+                                //if (custInfo.updatedEmail !== '') {
+                                this.errors = [];
+                                if(this.custInfo.emailAddress.endsWith("gmail.cm") || this.custInfo.emailAddress.endsWith("gmail.co") || this.custInfo.emailAddress.endsWith("gmal.com") || this.custInfo.emailAddress.endsWith("g-mail.com") || this.custInfo.emailAddress.endsWith("gmaill.com") || this.custInfo.emailAddress.endsWith("googlmail.com") || this.custInfo.emailAddress.endsWith("gmail.con")) {
+                                    this.errors.push("Did you mean gmail.com?");
+                                    this.changeEmail = true;
+                                    this.redBorderEmail = true;
+                                } else if(this.custInfo.emailAddress.endsWith("hotmail.cm") || this.custInfo.emailAddress.endsWith("hoymail.com") || this.custInfo.emailAddress.endsWith("homail.com") || this.custInfo.emailAddress.endsWith("hotmai.com") || this.custInfo.emailAddress.endsWith("hotmail.co") || this.custInfo.emailAddress.endsWith("hotmal.com") || this.custInfo.emailAddress.endsWith("hotmil.com") || this.custInfo.emailAddress.endsWith(" hotmain.com") || this.custInfo.emailAddress.endsWith("hatmail.com") || this.custInfo.emailAddress.endsWith("hotmail.con")){
+                                    this.errors.push("Did you mean hotmail.com?");
+                                    this.changeEmail = true;
+                                    this.redBorderEmail = true;
+                                } else if(this.custInfo.emailAddress.endsWith("yahoo.cm") || this.custInfo.emailAddress.endsWith("yahoo.co") || this.custInfo.emailAddress.endsWith("yaho.com") || this.custInfo.emailAddress.endsWith("yaoo.com") || this.custInfo.emailAddress.endsWith("yahooo.com") || this.custInfo.emailAddress.endsWith("yhaoo.com") || this.custInfo.emailAddress.endsWith("yahoo.con")){
+                                    this.errors.push("Did you mean yahoo.com?");
+                                    this.changeEmail = true;
+                                    this.redBorderEmail = true;
+                                } else if(this.custInfo.emailAddress.endsWith(".con")){
+                                    this.errors.push("Did you mean .com?");
+                                    this.changeEmail = true;
+                                    this.redBorderEmail = true;
+                                }
+                                if(!this.errors.length) {
+                                    this.concatFavPlayers();
+                                    return true;
+                                }
+                                e.preventDefault();
+                                }
+                           // }
+                        },
+                        updated: function() {
+                        // Turn the month day and year variables into a single string to load into Selligent if the user has selected all date fields.
+                        if(this.custInfo.dobYY && this.custInfo.dobMMNum && this.custInfo.dobDD) {
+                            this.custInfo.birthdayString = this.custInfo.dobYY + '-' + this.custInfo.dobMMNum + '-' + this.custInfo.dobDD;
+                        }
+                        
+                                             
+                        // This takes the month shorthand value that is captured from the form field drop down menu and converts it into the numeric month vaue to be used to store on the contacts list in a valid format. Only does it when all the date drop downs have been selected to prevent partial dates from trying to be stored.
+                        
+                                if (this.custInfo.dobMM == "Jan") {
+                                this.custInfo.dobMMNum = "01"
+                            } else if (this.custInfo.dobMM == "Feb") {
+                                this.custInfo.dobMMNum = "02"
+                            } else if (this.custInfo.dobMM == "Mar") {
+                                this.custInfo.dobMMNum = "03"
+                            } else if (this.custInfo.dobMM == "Apr") {
+                                this.custInfo.dobMMNum = "04"
+                            } else if (this.custInfo.dobMM == "May") {
+                                this.custInfo.dobMMNum = "05"
+                            } else if (this.custInfo.dobMM == "Jun") {
+                                this.custInfo.dobMMNum = "06"
+                            } else if (this.custInfo.dobMM == "Jul") {
+                                this.custInfo.dobMMNum = "07"
+                            } else if (this.custInfo.dobMM == "Aug") {
+                                this.custInfo.dobMMNum = "08"
+                            } else if (this.custInfo.dobMM == "Sep") {
+                                this.custInfo.dobMMNum = "09"
+                            } else if (this.custInfo.dobMM == "Oct") {
+                                this.custInfo.dobMMNum = "10"
+                            } else if (this.custInfo.dobMM == "Nov") {
+                                this.custInfo.dobMMNum = "11"
+                            } else if (this.custInfo.dobMM == "Dec") {
+                                this.custInfo.dobMMNum = "12"
+                            }
+
+                            // Change the copy of the favorite player pop up button based on if a guest has a favorite player
+                        if (this.custInfo.currentFavPlayer.chosen) {
+                            this.playerButtonText = "Change your player"
+                        }  else {
+                            this.playerButtonText = "Choose your player"   
+                            } 
+                        } 
+                        ,
+                        mounted: function(){
+                                                 
+                           // Check to see if a guest has a favorite player available and set the chosen variable based on results
+                           let curFavPlayer = "[%proper(itemValue('playerInfo', 0, 'PLAYER_NAME'))%]"
+                           let curFavPlayerOnRoster = "[%itemValue('playerInfo', 0, 'CURRENT_ROSTER')%]"
+                           if (curFavPlayer == '' ||  curFavPlayerOnRoster == 0) {
+                               this.custInfo.currentFavPlayer.chosen = false;
+                           } else {
+                                this.custInfo.currentFavPlayer.chosen = true;
+                           }
+
+                            // Function to decode the html entities that are returned with the player data json from table                             
+                            function decodeHtml(html) {
+                                var txt = document.createElement("textarea");
+                                txt.innerHTML = html;
+                                return txt.value;
+                            }
+                           
+                            // Make an ajax call to grab the player data in json form from the player data table in Selligent
+                            var domain = window.location.hostname;
+                            
+                            var url = 'https://' + window.location.hostname + '/optiext/optiextension.dll?ID=HjcHcc_r05FLVl_5IHE78imnwDat_OHhBshNUwSJyn2042dXqX9seXc1l1RBw1Jxe%2B6Y3A13gRFX0Yx2N0';
+                            
+                           var this_app = this;
+                            $.ajax({
+                                type: 'GET',
+                                dataType: "text",
+                                url: url,
+                                cache: false,
+                                success: function(data) {
+                                    this_app.playerData = JSON.parse(decodeHtml(data.trim().slice(1,-1)));
+                                },
+                                error: function(xhr) {
+                                app.loaded = true;
+                                console.log(xhr);
+                                }
+                            }); 
+
+                           
+                            // Split up the birthday string from Selligent so that it can be diplayed in the drop downs
+                                if (this.custInfo.birthdayString){                         
+                                let dateArray = this.custInfo.birthdayString.split("-");
+
+                                this.custInfo.dobYY = dateArray[0];
+                                this.custInfo.dobMM = dateArray[1];
+                                this.custInfo.dobDD = dateArray[2];
+
+                            // This takes the custInfo.dobMM variable that was assigned above and converts it into the month shorthand that will be used in the form drop down menu.
+                                if (this.custInfo.dobMM == "01") {
+                                    this.custInfo.dobMM = "Jan"
+                                } else if (this.custInfo.dobMM == "02") {
+                                    this.custInfo.dobMM = "Feb"
+                                } else if (this.custInfo.dobMM == "03") {
+                                    this.custInfo.dobMM = "Mar"
+                                } else if (this.custInfo.dobMM == "04") {
+                                    this.custInfo.dobMM = "Apr"
+                                } else if (this.custInfo.dobMM == "05") {
+                                    this.custInfo.dobMM = "May"
+                                } else if (this.custInfo.dobMM == "06") {
+                                this.custInfo.dobMM = "Jun"
+                                } else if (this.custInfo.dobMM == "07") {
+                                    this.custInfo.dobMM = "Jul"
+                                } else if (this.custInfo.dobMM == "08") {
+                                    this.custInfo.dobMM = "Aug"
+                                } else if (this.custInfo.dobMM == "09") {
+                                    this.custInfo.dobMM = "Sep"
+                                } else if (this.custInfo.dobMM == "10") {
+                                    this.custInfo.dobMM = "Oct"
+                                } else if (this.custInfo.dobMM == "11") {
+                                    this.custInfo.dobMM = "Nov"
+                                } else if (this.custInfo.dobMM == "12") {
+                                    this.custInfo.dobMM = "Dec"
+                                }
+                            }
+
+                                // set topics variables based on Selligent list values
+                                let eventsVar = "[%loadValue(requestValue('FANROSTER_EVENTS'),'FANROSTER_EVENTS','')%]"
+                                if (eventsVar=="true" || eventsVar==1) {
+                                    this.custInfo.topics.events = true;
+                                } else {
+                                    this.custInfo.events = false;
+                                }
+
+                                let newsVar = "[%loadValue(requestValue('FANROSTER_NEWS'),'FANROSTER_NEWS','')%]"
+                                if (newsVar=="true" || newsVar==1) {
+                                    this.custInfo.topics.news = true;
+                                } else {
+                                    this.custInfo.news = false;
+                                }
+
+                                let offersContestsVar = "[%loadValue(requestValue('FANROSTER_OFFERS_CONTESTS'),'FANROSTER_OFFERS_CONTESTS','')%]"
+                                if (offersContestsVar=="true" || offersContestsVar==1) {
+                                    this.custInfo.topics.offersContests = true;
+                                } else {
+                                    this.custInfo.offersContests = false;
+                                }
+
+                                let womenVar = "[%loadValue(requestValue('FANROSTER_WOMEN'),'FANROSTER_WOMEN','')%]"
+                                if (womenVar=="true" || womenVar==1) {
+                                    this.custInfo.topics.women = true;
+                                } else {
+                                    this.custInfo.women = false;
+                                }
+
+                                let ticketInsiderVar = "[%loadValue(requestValue('FANROSTER_TICKET_INSIDER'),'FANROSTER_TICKET_INSIDER','')%]"
+                                if (ticketInsiderVar=="true" || ticketInsiderVar==1) {
+                                    this.custInfo.topics.ticketInsider = true;
+                                } else {
+                                    this.custInfo.ticketInsider = false;
+                                }
+                            
+                                // This will create an array of all year dates from 1900 to the current date minus 14 years so that the drop down menu dates do not need to be updated.
+                            var currentDateYear = new Date().getFullYear() - 14;
+                            for (i = 1900; i <= currentDateYear; i++) {
+                                this.dobYY.unshift(i);
+                            }
+                        }
+                })
+            </script>
+           </body>
+</html>
